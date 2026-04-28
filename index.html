@@ -231,6 +231,84 @@
     </div>
   </section>
 
+  <!-- HOW WE WORK -->
+  <section id="process" class="section dark-section">
+    <div class="container">
+      <div class="section-header light">
+        <span class="section-tag tag-gold">How We Work</span>
+        <h2>Your Project, From First Call <br /><span class="gradient-text-gold">to Final Walkthrough</span></h2>
+        <p>Every TrueServe project follows the same proven process — transparent, AI-monitored, and built around keeping you informed at every step.</p>
+      </div>
+      <div class="process-timeline">
+        <div class="process-line"></div>
+        <div class="process-step">
+          <div class="ps-num">01</div>
+          <div class="ps-icon">🤝</div>
+          <div class="ps-content">
+            <h3>Discovery Call</h3>
+            <p>We learn your project goals, timeline, budget, and constraints. No generic quotes — we ask the right questions upfront so nothing surprises you later.</p>
+            <div class="ps-tags">
+              <span>Free consultation</span>
+              <span>24hr response</span>
+            </div>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="ps-num">02</div>
+          <div class="ps-icon">🧠</div>
+          <div class="ps-content">
+            <h3>AI-Powered Estimate</h3>
+            <p>Our AI models generate a precise bid using Charlotte-specific cost benchmarks, subcontractor risk scores, and schedule simulations — not gut instinct.</p>
+            <div class="ps-tags">
+              <span>Benchmark-based pricing</span>
+              <span>Risk analysis included</span>
+            </div>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="ps-num">03</div>
+          <div class="ps-icon">🏗️</div>
+          <div class="ps-content">
+            <h3>Build & Monitor</h3>
+            <p>Construction begins with our full AI platform active — computer vision on site, predictive alerts running, and the field–office feedback loop live from day one.</p>
+            <div class="ps-tags">
+              <span>Computer vision active</span>
+              <span>Daily AI reports</span>
+            </div>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="ps-num">04</div>
+          <div class="ps-icon">📊</div>
+          <div class="ps-content">
+            <h3>Live Client Dashboard</h3>
+            <p>You get a real-time dashboard with progress photos, milestone tracking, budget variance, and AI alerts. No more "how's it going?" calls — you already know.</p>
+            <div class="ps-tags">
+              <span>24/7 access</span>
+              <span>Mobile-friendly</span>
+            </div>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="ps-num">05</div>
+          <div class="ps-icon">🏁</div>
+          <div class="ps-content">
+            <h3>Handoff & Benchmarks</h3>
+            <p>Project complete. You receive full documentation, warranties, and a post-project report. Your data feeds our benchmark database — making every future project smarter.</p>
+            <div class="ps-tags">
+              <span>Full documentation</span>
+              <span>Post-project AI report</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="process-cta">
+        <a href="#contact" class="btn-primary">Start with a Discovery Call</a>
+        <span class="pcta-note">Free · No commitment · Response within 24 hours</span>
+      </div>
+    </div>
+  </section>
+
   <!-- AI PLATFORM -->
   <section id="ai-solutions" class="section dark-section">
     <div class="container">
@@ -665,6 +743,126 @@
             <h4>Reputation Transfers Up</h4>
             <p>Win 5 municipal projects with flawless AI-driven delivery. That reputation opens doors to larger commercial developers who want the same precision.</p>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROI CALCULATOR -->
+  <section id="roi-calculator" class="section dark-section">
+    <div class="container">
+      <div class="section-header light">
+        <span class="section-tag tag-green">ROI Calculator</span>
+        <h2>See What AI-Driven Construction <br /><span class="gradient-text">Saves You</span></h2>
+        <p>Enter your project details and see exactly how much TrueServe's AI platform saves compared to a traditional contractor.</p>
+      </div>
+      <div class="roi-layout">
+        <div class="roi-inputs">
+          <h4>Your Project</h4>
+          <div class="roi-field">
+            <label>Project Type</label>
+            <div class="roi-select-wrap">
+              <select id="roi-type">
+                <option value="commercial">Commercial Construction</option>
+                <option value="residential">Residential Renovation</option>
+                <option value="infrastructure">Public Infrastructure / Trail</option>
+                <option value="mixed">Mixed-Use Development</option>
+              </select>
+            </div>
+          </div>
+          <div class="roi-field">
+            <label>Total Project Budget</label>
+            <div class="roi-input-wrap">
+              <span class="roi-prefix">$</span>
+              <input type="number" id="roi-budget" value="500000" min="50000" max="50000000" step="10000" />
+            </div>
+          </div>
+          <div class="roi-field">
+            <label>Project Duration (months)</label>
+            <div class="roi-slider-wrap">
+              <input type="range" id="roi-duration" min="2" max="36" value="12" class="roi-slider" />
+              <span class="roi-slider-val"><span id="roi-duration-val">12</span> months</span>
+            </div>
+          </div>
+          <div class="roi-field">
+            <label>Number of Subcontractors</label>
+            <div class="roi-slider-wrap">
+              <input type="range" id="roi-subs" min="1" max="20" value="5" class="roi-slider" />
+              <span class="roi-slider-val"><span id="roi-subs-val">5</span> subs</span>
+            </div>
+          </div>
+          <div class="roi-field">
+            <label>Team Size (workers on site)</label>
+            <div class="roi-slider-wrap">
+              <input type="range" id="roi-workers" min="5" max="200" value="25" step="5" class="roi-slider" />
+              <span class="roi-slider-val"><span id="roi-workers-val">25</span> workers</span>
+            </div>
+          </div>
+          <button class="btn-primary full-width" id="roi-calc-btn">Calculate My Savings →</button>
+        </div>
+
+        <div class="roi-results" id="roi-results">
+          <div class="roi-results-header">
+            <h4>Estimated Savings with TrueServe AI</h4>
+            <span class="roi-total-label">Total Projected Savings</span>
+            <div class="roi-total" id="roi-total">$0</div>
+          </div>
+          <div class="roi-breakdown">
+            <div class="roi-row">
+              <div class="roir-left">
+                <span class="roir-icon">📅</span>
+                <div>
+                  <span class="roir-label">Schedule Delay Prevention</span>
+                  <span class="roir-desc">Industry avg: 20% over — TrueServe avg: 4%</span>
+                </div>
+              </div>
+              <span class="roir-val" id="roi-schedule">—</span>
+            </div>
+            <div class="roi-row">
+              <div class="roir-left">
+                <span class="roir-icon">💰</span>
+                <div>
+                  <span class="roir-label">Cost Overrun Reduction</span>
+                  <span class="roir-desc">Industry avg: 12% over — TrueServe avg: 0.8%</span>
+                </div>
+              </div>
+              <span class="roir-val" id="roi-overrun">—</span>
+            </div>
+            <div class="roi-row">
+              <div class="roir-left">
+                <span class="roir-icon">🦺</span>
+                <div>
+                  <span class="roir-label">Safety Incident Prevention</span>
+                  <span class="roir-desc">Avg incident cost: $42k — CV reduces risk by 68%</span>
+                </div>
+              </div>
+              <span class="roir-val" id="roi-safety">—</span>
+            </div>
+            <div class="roi-row">
+              <div class="roir-left">
+                <span class="roir-icon">🔍</span>
+                <div>
+                  <span class="roir-label">Early Defect Detection</span>
+                  <span class="roir-desc">Catching defects in-phase vs post-build: 6x cheaper</span>
+                </div>
+              </div>
+              <span class="roir-val" id="roi-defect">—</span>
+            </div>
+            <div class="roi-row">
+              <div class="roir-left">
+                <span class="roir-icon">🚩</span>
+                <div>
+                  <span class="roir-label">Subcontractor Risk Avoidance</span>
+                  <span class="roir-desc">AI flags high-risk subs before contract signing</span>
+                </div>
+              </div>
+              <span class="roir-val" id="roi-sub">—</span>
+            </div>
+          </div>
+          <div class="roi-disclaimer">
+            * Estimates based on industry benchmarks (McKinsey, KPMG construction reports) and TrueServe project data. Actual savings vary by project.
+          </div>
+          <a href="#contact" class="btn-primary full-width">Get a Real Analysis for My Project</a>
         </div>
       </div>
     </div>
