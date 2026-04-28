@@ -1637,7 +1637,145 @@ body {
 }
 
 /* ============================================ NICHE SECTION */
-.niche-section { background: var(--gray1); }
+.niche-section { background: var(--navy); }
+
+.niche-hero {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.niche-hero-left .section-tag { margin-bottom: 16px; }
+
+.niche-hero-left h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 900;
+  line-height: 1.1;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.niche-hero-left > p {
+  font-size: 15px;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+.niche-focus-badge {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px 28px;
+  background: linear-gradient(135deg, rgba(240,160,48,0.12), rgba(240,160,48,0.04));
+  border: 1px solid rgba(240,160,48,0.3);
+  border-radius: var(--radius2);
+  margin-bottom: 32px;
+}
+
+.nb-icon {
+  font-size: 40px;
+  width: 64px; height: 64px;
+  background: rgba(240,160,48,0.1);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.niche-focus-badge h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 6px;
+}
+
+.nb-sub {
+  font-size: 13px;
+  color: rgba(255,255,255,0.45);
+  line-height: 1.5;
+}
+
+.niche-stats-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.ns-item { text-align: center; }
+
+.ns-num {
+  display: block;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 26px;
+  font-weight: 900;
+  color: var(--gold);
+  margin-bottom: 4px;
+}
+
+.ns-label {
+  display: block;
+  font-size: 11px;
+  color: rgba(255,255,255,0.35);
+  line-height: 1.4;
+  max-width: 100px;
+}
+
+.ns-divider {
+  width: 1px;
+  height: 48px;
+  background: rgba(255,255,255,0.08);
+  flex-shrink: 0;
+}
+
+.niche-why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.nw-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--radius2);
+  padding: 24px;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.nw-card:hover {
+  border-color: rgba(240,160,48,0.3);
+  background: rgba(240,160,48,0.05);
+  transform: translateY(-3px);
+}
+
+.nw-num {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  color: rgba(240,160,48,0.12);
+  position: absolute;
+  top: 12px; right: 16px;
+  line-height: 1;
+}
+
+.nw-card h4 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+
+.nw-card p {
+  font-size: 13px;
+  color: rgba(255,255,255,0.4);
+  line-height: 1.65;
+}
 
 .niche-reveal { display: flex; flex-direction: column; gap: 40px; }
 
