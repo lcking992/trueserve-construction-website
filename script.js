@@ -26,9 +26,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+// AI Platform tabs
+document.querySelectorAll('.ptab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.ptab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.platform-panel').forEach(p => p.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById('tab-' + tab.dataset.tab).classList.add('active');
+  });
+});
+
 // Scroll fade-in animations
 const fadeEls = document.querySelectorAll(
-  '.service-card, .ai-feat, .ai-other-card, .vp-card, .pillar, .project-card, .av-item, .sus-stat'
+  '.service-card, .pf-item, .vp-card, .pillar, .project-card, .av-item, .sus-stat, .nw-card, .bm-card'
 );
 
 fadeEls.forEach(el => el.classList.add('fade-in'));

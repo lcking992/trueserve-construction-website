@@ -231,30 +231,367 @@
     </div>
   </section>
 
-  <!-- AI SOLUTIONS -->
+  <!-- AI PLATFORM -->
   <section id="ai-solutions" class="section dark-section">
     <div class="container">
       <div class="section-header light">
-        <span class="section-tag tag-blue">Technology</span>
-        <h2>AI-Powered Construction <br /><span class="gradient-text">Solutions</span></h2>
-        <p>We don't just build structures — we build smart environments that leverage AI, kiosks, and chatbots to serve communities and align with the Smart City vision.</p>
+        <span class="section-tag tag-blue">TrueServe AI Platform</span>
+        <h2>The Construction Industry's Most <br /><span class="gradient-text">Intelligent Jobsite</span></h2>
+        <p>While other contractors react to problems, TrueServe predicts them. Our AI platform turns raw jobsite data into decisions — before delays, overruns, and incidents happen.</p>
       </div>
 
-      <div class="ai-showcase">
-        <div class="ai-feature-card main-ai">
-          <div class="ai-card-header">
-            <span class="ai-badge">Featured Use Case</span>
-            <h3>AI-Powered Trail Kiosks</h3>
-            <p>Interactive kiosks installed at trailheads and intersections providing real-time trail information, route planning, and accessibility features.</p>
-          </div>
-          <div class="kiosk-demo">
-            <div class="kiosk-screen">
-              <div class="kiosk-header-bar">
-                <span>TrueServe Trail System</span>
-                <span class="kiosk-dot"></span>
+      <!-- TAB NAV -->
+      <div class="platform-tabs">
+        <button class="ptab active" data-tab="predict">🧠 Predictive Intelligence</button>
+        <button class="ptab" data-tab="vision">📷 Computer Vision</button>
+        <button class="ptab" data-tab="feedback">🔄 Field–Office Loop</button>
+        <button class="ptab" data-tab="benchmarks">📊 Proprietary Benchmarks</button>
+        <button class="ptab" data-tab="kiosk">🗺️ Smart Kiosks</button>
+      </div>
+
+      <!-- PREDICT TAB -->
+      <div class="platform-panel active" id="tab-predict">
+        <div class="panel-split">
+          <div class="panel-content">
+            <h3>See Problems <span class="gradient-text">Before They Happen</span></h3>
+            <p>Our predictive models analyze hundreds of data points — weather, crew capacity, material lead times, subcontractor history — to flag risks weeks before they become costly.</p>
+            <div class="predict-features">
+              <div class="pf-item">
+                <div class="pf-icon risk-high">⚠️</div>
+                <div>
+                  <h4>Schedule Delay Prediction</h4>
+                  <p>AI forecasts potential delays 2–4 weeks out based on current progress, weather forecasts, and resource availability — giving you time to act.</p>
+                </div>
               </div>
-              <div class="kiosk-body">
-                <div class="kiosk-map">
+              <div class="pf-item">
+                <div class="pf-icon risk-med">🚩</div>
+                <div>
+                  <h4>Subcontractor Risk Flagging</h4>
+                  <p>Every subcontractor gets a live risk score based on past performance, current workload, and financial health signals — before you sign a contract.</p>
+                </div>
+              </div>
+              <div class="pf-item">
+                <div class="pf-icon risk-low">💰</div>
+                <div>
+                  <h4>Cost Overrun Forecasting</h4>
+                  <p>Real-time budget variance analysis catches overruns at 5% before they reach 20% — when there's still time to course-correct.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-visual">
+            <div class="predict-dashboard">
+              <div class="dash-header">
+                <span class="dash-title">Project Intelligence</span>
+                <span class="dash-live"><span class="live-dot"></span>Live</span>
+              </div>
+              <div class="risk-meters">
+                <div class="risk-row">
+                  <span class="rr-label">Schedule Risk</span>
+                  <div class="risk-bar-wrap">
+                    <div class="risk-bar rb-warn" style="width:62%"></div>
+                  </div>
+                  <span class="rr-val warn">62%</span>
+                </div>
+                <div class="risk-row">
+                  <span class="rr-label">Cost Variance</span>
+                  <div class="risk-bar-wrap">
+                    <div class="risk-bar rb-good" style="width:18%"></div>
+                  </div>
+                  <span class="rr-val good">+18%</span>
+                </div>
+                <div class="risk-row">
+                  <span class="rr-label">Sub Risk — Elec.</span>
+                  <div class="risk-bar-wrap">
+                    <div class="risk-bar rb-danger" style="width:81%"></div>
+                  </div>
+                  <span class="rr-val danger">HIGH</span>
+                </div>
+                <div class="risk-row">
+                  <span class="rr-label">Sub Risk — HVAC</span>
+                  <div class="risk-bar-wrap">
+                    <div class="risk-bar rb-good" style="width:24%"></div>
+                  </div>
+                  <span class="rr-val good">LOW</span>
+                </div>
+              </div>
+              <div class="dash-alert">
+                <span class="alert-icon">🔔</span>
+                <span><strong>AI Alert:</strong> Electrical sub showing 3 late deliveries this quarter. Recommend backup vendor by Week 6.</span>
+              </div>
+              <div class="dash-forecast">
+                <div class="fc-bar" style="height:40%"></div>
+                <div class="fc-bar" style="height:55%"></div>
+                <div class="fc-bar" style="height:45%"></div>
+                <div class="fc-bar" style="height:70%"></div>
+                <div class="fc-bar fc-current" style="height:62%"></div>
+                <div class="fc-bar fc-pred" style="height:75%"></div>
+                <div class="fc-bar fc-pred" style="height:68%"></div>
+                <div class="fc-bar fc-pred" style="height:50%"></div>
+              </div>
+              <div class="dash-fc-label">
+                <span>Actual spend vs AI forecast (next 4 weeks)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- VISION TAB -->
+      <div class="platform-panel" id="tab-vision">
+        <div class="panel-split">
+          <div class="panel-content">
+            <h3>Eyes on Every <span class="gradient-text">Inch of the Jobsite</span></h3>
+            <p>Cameras placed across the site feed real-time video into our computer vision models. Every frame is analyzed for safety, quality, and compliance — 24/7, without fatigue.</p>
+            <div class="predict-features">
+              <div class="pf-item">
+                <div class="pf-icon risk-high">🦺</div>
+                <div>
+                  <h4>PPE Compliance Tracking</h4>
+                  <p>Instantly detects missing hard hats, vests, gloves, and eye protection. Alerts supervisors in real time. Every violation is logged with timestamp and location.</p>
+                </div>
+              </div>
+              <div class="pf-item">
+                <div class="pf-icon risk-med">🔍</div>
+                <div>
+                  <h4>Quality Defect Detection</h4>
+                  <p>AI identifies cracks, misalignments, improper installs, and missing components as they happen — not during final inspection when fixes cost 10x more.</p>
+                </div>
+              </div>
+              <div class="pf-item">
+                <div class="pf-icon risk-low">🚨</div>
+                <div>
+                  <h4>Unsafe Behavior Detection</h4>
+                  <p>Recognizes dangerous movements near heavy equipment, restricted zone violations, and working-at-height without fall protection before accidents occur.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-visual">
+            <div class="cv-dashboard">
+              <div class="dash-header">
+                <span class="dash-title">Site Vision — Zone A</span>
+                <span class="dash-live"><span class="live-dot"></span>Recording</span>
+              </div>
+              <div class="camera-feed">
+                <div class="cf-bg"></div>
+                <div class="detection-box db-ppe ok">
+                  <span class="db-label ok-label">✓ PPE</span>
+                </div>
+                <div class="detection-box db-worker">
+                  <span class="db-label ok-label">✓ PPE</span>
+                </div>
+                <div class="detection-box db-violation">
+                  <span class="db-label warn-label">⚠ No Hard Hat</span>
+                </div>
+                <div class="detection-box db-quality">
+                  <span class="db-label warn-label">🔍 Review</span>
+                </div>
+                <div class="scan-line"></div>
+              </div>
+              <div class="cv-stats">
+                <div class="cv-stat">
+                  <span class="cvs-num green-num">94%</span>
+                  <span class="cvs-label">PPE Compliance</span>
+                </div>
+                <div class="cv-stat">
+                  <span class="cvs-num warn-num">2</span>
+                  <span class="cvs-label">Active Alerts</span>
+                </div>
+                <div class="cv-stat">
+                  <span class="cvs-num green-num">0</span>
+                  <span class="cvs-label">Incidents Today</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FEEDBACK TAB -->
+      <div class="platform-panel" id="tab-feedback">
+        <div class="panel-split">
+          <div class="panel-content">
+            <h3>Field and Office <span class="gradient-text">Finally Speak the Same Language</span></h3>
+            <p>Most construction problems start as small field issues that never reach the office in time. TrueServe closes that gap with a real-time feedback loop that keeps everyone aligned.</p>
+            <div class="predict-features">
+              <div class="pf-item">
+                <div class="pf-icon risk-high">📱</div>
+                <div>
+                  <h4>Instant Field Reports</h4>
+                  <p>Workers submit issues, photos, and status updates via mobile — instantly visible to the PM, owner, and client in a shared dashboard.</p>
+                </div>
+              </div>
+              <div class="pf-item">
+                <div class="pf-icon risk-med">🔁</div>
+                <div>
+                  <h4>Closed-Loop Issue Tracking</h4>
+                  <p>Every field issue gets a ticket, an owner, and a deadline. Nothing falls through. AI prioritizes the list based on schedule impact.</p>
+                </div>
+              </div>
+              <div class="pf-item">
+                <div class="pf-icon risk-low">📡</div>
+                <div>
+                  <h4>Live Client Transparency</h4>
+                  <p>Clients get a read-only dashboard with real-time progress, photos, and milestone updates — eliminating the "how's it going?" call entirely.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-visual">
+            <div class="loop-diagram">
+              <div class="loop-node field-node">
+                <div class="ln-icon">👷</div>
+                <span>Field Crew</span>
+              </div>
+              <div class="loop-arrow la-up">
+                <div class="arrow-line"></div>
+                <div class="arrow-label">Issues, Photos, Progress</div>
+              </div>
+              <div class="loop-node ai-node">
+                <div class="ln-icon">🤖</div>
+                <span>AI Engine</span>
+              </div>
+              <div class="loop-arrow la-right">
+                <div class="arrow-line"></div>
+                <div class="arrow-label">Prioritized Alerts</div>
+              </div>
+              <div class="loop-node office-node">
+                <div class="ln-icon">🏢</div>
+                <span>Project Office</span>
+              </div>
+              <div class="loop-arrow la-down">
+                <div class="arrow-line"></div>
+                <div class="arrow-label">Decisions &amp; Directives</div>
+              </div>
+              <div class="loop-node client-node">
+                <div class="ln-icon">👔</div>
+                <span>Client</span>
+              </div>
+              <div class="loop-issues">
+                <div class="issue-card ic-open">
+                  <span class="ic-tag open-tag">Open</span>
+                  <span class="ic-text">Missing rebar — Grid C4</span>
+                  <span class="ic-meta">📍 Zone B · 2h ago</span>
+                </div>
+                <div class="issue-card ic-closed">
+                  <span class="ic-tag closed-tag">Resolved</span>
+                  <span class="ic-text">Concrete pour delayed — rain</span>
+                  <span class="ic-meta">✓ Rescheduled Wed</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BENCHMARKS TAB -->
+      <div class="platform-panel" id="tab-benchmarks">
+        <div class="panel-split">
+          <div class="panel-content">
+            <h3>Data That Becomes <span class="gradient-text">a Competitive Moat</span></h3>
+            <p>Every project TrueServe completes feeds our proprietary benchmark database. Over time, we build intelligence no competitor can buy — because they weren't in the field collecting it.</p>
+            <div class="predict-features">
+              <div class="pf-item">
+                <div class="pf-icon risk-high">📏</div>
+                <div>
+                  <h4>Charlotte-Specific Cost Benchmarks</h4>
+                  <p>Real cost-per-sqft, material costs, and labor rates specific to Charlotte's market — not national averages. Our bids are more accurate than anyone else's.</p>
+                </div>
+              </div>
+              <div class="pf-item">
+                <div class="pf-icon risk-med">⏱️</div>
+                <div>
+                  <h4>Task Duration Intelligence</h4>
+                  <p>We know how long every trade takes on every project type in this market. Our schedules aren't guesses — they're built on thousands of real data points.</p>
+                </div>
+              </div>
+              <div class="pf-item">
+                <div class="pf-icon risk-low">🏆</div>
+                <div>
+                  <h4>Subcontractor Performance Index</h4>
+                  <p>A proprietary score for every sub we've worked with — on-time rate, quality rate, communication score. We only partner with proven performers.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-visual">
+            <div class="benchmark-dashboard">
+              <div class="dash-header">
+                <span class="dash-title">TrueServe Benchmark Index</span>
+                <span class="bm-projects">47 projects</span>
+              </div>
+              <div class="bm-grid">
+                <div class="bm-card">
+                  <span class="bm-num">$187</span>
+                  <span class="bm-label">Avg. cost/sqft<br/>Commercial CLT</span>
+                  <span class="bm-delta up">↑ 3% vs market</span>
+                </div>
+                <div class="bm-card">
+                  <span class="bm-num">94%</span>
+                  <span class="bm-label">On-time delivery<br/>rate (our avg)</span>
+                  <span class="bm-delta up">↑ 18% vs industry</span>
+                </div>
+                <div class="bm-card">
+                  <span class="bm-num">2.1x</span>
+                  <span class="bm-label">Faster defect<br/>detection</span>
+                  <span class="bm-delta up">vs traditional QC</span>
+                </div>
+                <div class="bm-card">
+                  <span class="bm-num">0.8%</span>
+                  <span class="bm-label">Avg. cost overrun<br/>(our projects)</span>
+                  <span class="bm-delta up">vs 12% industry avg</span>
+                </div>
+              </div>
+              <div class="bm-bar-section">
+                <span class="bm-bar-title">Top Sub Performance Scores</span>
+                <div class="sub-row"><span>Framing Co. A</span><div class="sub-bar" style="width:92%"></div><span>92</span></div>
+                <div class="sub-row"><span>Electrical LLC</span><div class="sub-bar sb-warn" style="width:71%"></div><span>71</span></div>
+                <div class="sub-row"><span>Plumbing Inc.</span><div class="sub-bar" style="width:88%"></div><span>88</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- KIOSK TAB -->
+      <div class="platform-panel" id="tab-kiosk">
+        <div class="panel-split">
+          <div class="panel-content">
+            <h3>AI Kiosks That <span class="gradient-text">Serve Communities</span></h3>
+            <p>TrueServe doesn't just build trails and parks — we make them smarter. Our AI-powered kiosks turn public infrastructure into interactive, data-rich community assets.</p>
+            <div class="predict-features">
+              <div class="pf-item">
+                <div class="pf-icon risk-high">📍</div>
+                <div>
+                  <h4>Real-Time Trail Navigation</h4>
+                  <p>GPS-enabled interactive maps with remaining distance, connecting trails, difficulty ratings, and live points of interest.</p>
+                </div>
+              </div>
+              <div class="pf-item">
+                <div class="pf-icon risk-med">♿</div>
+                <div>
+                  <h4>Full ADA Accessibility</h4>
+                  <p>Audio descriptions, adjustable font sizes, and ADA-compliant interfaces ensure every community member can use the system.</p>
+                </div>
+              </div>
+              <div class="pf-item">
+                <div class="pf-icon risk-low">📊</div>
+                <div>
+                  <h4>Usage Analytics for Parks Depts</h4>
+                  <p>Trail usage heatmaps, peak time data, and maintenance feedback — giving parks departments real intelligence for resource planning.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-visual">
+            <div class="predict-dashboard">
+              <div class="dash-header">
+                <span class="dash-title">TrueServe Trail System</span>
+                <span class="dash-live"><span class="live-dot"></span>Live</span>
+              </div>
+              <div class="kiosk-body" style="padding:12px; gap:12px; display:grid; grid-template-columns:1.4fr 1fr;">
+                <div class="kiosk-map" style="height:130px;">
                   <div class="trail-line tl1"></div>
                   <div class="trail-line tl2"></div>
                   <div class="trail-line tl3"></div>
@@ -264,99 +601,70 @@
                   <div class="you-are-here">📍</div>
                 </div>
                 <div class="kiosk-info">
-                  <div class="kiosk-stat-row">
-                    <span class="k-label">Trail Length</span>
-                    <span class="k-val">3.2 mi</span>
-                  </div>
-                  <div class="kiosk-stat-row">
-                    <span class="k-label">Remaining</span>
-                    <span class="k-val">1.8 mi</span>
-                  </div>
-                  <div class="kiosk-stat-row">
-                    <span class="k-label">Difficulty</span>
-                    <span class="k-val easy">Easy</span>
-                  </div>
-                  <div class="kiosk-stat-row">
-                    <span class="k-label">Connections</span>
-                    <span class="k-val">4 trails</span>
-                  </div>
+                  <div class="kiosk-stat-row"><span class="k-label">Trail Length</span><span class="k-val">3.2 mi</span></div>
+                  <div class="kiosk-stat-row"><span class="k-label">Remaining</span><span class="k-val">1.8 mi</span></div>
+                  <div class="kiosk-stat-row"><span class="k-label">Difficulty</span><span class="k-val easy">Easy</span></div>
+                  <div class="kiosk-stat-row"><span class="k-label">Connections</span><span class="k-val">4 trails</span></div>
                 </div>
               </div>
               <div class="kiosk-footer-bar">
-                <span>🚻 0.3mi</span>
-                <span>💧 0.7mi</span>
-                <span>🏞️ 1.1mi</span>
+                <span>🚻 0.3mi</span><span>💧 0.7mi</span><span>🏞️ 1.1mi</span>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="ai-features-list">
-          <div class="ai-feat">
-            <div class="ai-feat-icon">📍</div>
-            <div>
-              <h4>Real-Time Location</h4>
-              <p>GPS-enabled positioning shows users exactly where they are on the trail network.</p>
-            </div>
-          </div>
-          <div class="ai-feat">
-            <div class="ai-feat-icon">🗺️</div>
-            <div>
-              <h4>Smart Route Planning</h4>
-              <p>AI generates optimal routes based on user preferences, fitness level, and destination.</p>
-            </div>
-          </div>
-          <div class="ai-feat">
-            <div class="ai-feat-icon">♿</div>
-            <div>
-              <h4>Full Accessibility</h4>
-              <p>Audio descriptions, adjustable fonts, and ADA-compliant interfaces for all users.</p>
-            </div>
-          </div>
-          <div class="ai-feat">
-            <div class="ai-feat-icon">📊</div>
-            <div>
-              <h4>Usage Analytics</h4>
-              <p>Valuable data for parks departments on trail usage patterns and peak times.</p>
-            </div>
-          </div>
-          <div class="ai-feat">
-            <div class="ai-feat-icon">🌡️</div>
-            <div>
-              <h4>Live Conditions</h4>
-              <p>Sensor integration for real-time weather, trail conditions, and safety alerts.</p>
-            </div>
-          </div>
-          <div class="ai-feat">
-            <div class="ai-feat-icon">🆘</div>
-            <div>
-              <h4>Emergency Link</h4>
-              <p>Direct connection to emergency services directly from the kiosk interface.</p>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="ai-other-grid">
-        <div class="ai-other-card">
-          <div class="ao-icon">💬</div>
-          <h4>Construction Chatbots</h4>
-          <p>AI chatbots on project sites for worker check-ins, safety briefings, and visitor FAQs — reducing admin overhead and improving communication.</p>
+    </div>
+  </section>
+
+  <!-- NICHE DOMINATION -->
+  <section id="niche" class="section niche-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag tag-gold">Our Niche</span>
+        <h2>One Market. Total <span class="gradient-text-gold">Domination.</span></h2>
+        <p>The most dangerous strategy in construction is trying to do everything. TrueServe is going deep on one niche where AI gives us an unbeatable edge.</p>
+      </div>
+      <div class="niche-reveal">
+        <div class="niche-badge">
+          <div class="nb-icon">🏙️</div>
+          <div>
+            <h3>Municipal & Public Infrastructure</h3>
+            <span class="nb-sub">Parks · Trails · Greenways · Public Buildings · Smart City Assets</span>
+          </div>
         </div>
-        <div class="ai-other-card">
-          <div class="ao-icon">📷</div>
-          <h4>Computer Vision Safety</h4>
-          <p>AI cameras detect PPE compliance and hazardous conditions in real time, alerting supervisors before incidents occur.</p>
-        </div>
-        <div class="ai-other-card">
-          <div class="ao-icon">📈</div>
-          <h4>Smart Project Tracking</h4>
-          <p>AI-driven dashboards give clients live project progress updates, budget tracking, and milestone alerts.</p>
-        </div>
-        <div class="ai-other-card">
-          <div class="ao-icon">🏙️</div>
-          <h4>Smart City Integration</h4>
-          <p>Buildings and infrastructure designed to plug into Charlotte's smart city grid — sensors, connectivity, and data-ready by default.</p>
+        <div class="niche-why-grid">
+          <div class="nw-card">
+            <div class="nw-num">01</div>
+            <h4>Underserved by AI</h4>
+            <p>Zero local contractors are using AI on municipal projects. First mover wins long-term contracts and becomes the city's trusted partner.</p>
+          </div>
+          <div class="nw-card">
+            <div class="nw-num">02</div>
+            <h4>Charlotte is Investing Billions</h4>
+            <p>Charlotte 2040 allocates massive capital to public infrastructure. The pipeline is long, recurring, and publicly funded — lowest collection risk in construction.</p>
+          </div>
+          <div class="nw-card">
+            <div class="nw-num">03</div>
+            <h4>Compliance = Our Advantage</h4>
+            <p>Municipal projects have strict safety and quality requirements. Our computer vision and compliance tracking turns regulatory burden into a sales feature.</p>
+          </div>
+          <div class="nw-card">
+            <div class="nw-num">04</div>
+            <h4>Data Compounds Over Time</h4>
+            <p>Every municipal project adds to our Charlotte-specific benchmark database. 5 years in, our cost and schedule accuracy is impossible to match.</p>
+          </div>
+          <div class="nw-card">
+            <div class="nw-num">05</div>
+            <h4>Kiosks + Trails = Proof of Concept</h4>
+            <p>We already have a working AI kiosk use case for trail systems. That's a live demo we can show every parks department in Mecklenburg County.</p>
+          </div>
+          <div class="nw-card">
+            <div class="nw-num">06</div>
+            <h4>Reputation Transfers Up</h4>
+            <p>Win 5 municipal projects with flawless AI-driven delivery. That reputation opens doors to larger commercial developers who want the same precision.</p>
+          </div>
         </div>
       </div>
     </div>
