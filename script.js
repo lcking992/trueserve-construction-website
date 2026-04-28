@@ -54,6 +54,88 @@ const observer = new IntersectionObserver((entries) => {
 
 fadeEls.forEach(el => observer.observe(el));
 
+// ============================================ CHATBOT
+const chatBubble  = document.getElementById('chatBubble');
+const chatWindow  = document.getElementById('chatWindow');
+const chatClose   = document.getElementById('chatClose');
+const chatInput   = document.getElementById('chatInput');
+const chatSend    = document.getElementById('chatSend');
+const chatMessages = document.getElementById('chatMessages');
+
+const responses = {
+  "what services do you offer?": "TrueServe offers commercial construction, residential renovations, sustainable building, municipal & trail infrastructure, and AI kiosk installation. Our specialty is public infrastructure aligned with Charlotte 2040. Want me to connect you with our team?",
+  "how does the ai platform work?": "Our AI platform has 5 layers: (1) Predictive analytics — flags schedule delays and cost overruns weeks early. (2) Computer vision — cameras track PPE compliance and detect quality defects in real time. (3) Field-office loop — instant issue reporting between crew and PM. (4) Subcontractor risk scoring. (5) Proprietary Charlotte cost benchmarks. Want a full demo?",
+  "how do i get a bid?": "Easy! Fill out our contact form at the bottom of this page and we'll respond within 24 hours. We'll set up a free discovery call to learn about your project before providing any numbers. Want to jump to the form?",
+  "what's the roi?": "Based on industry benchmarks, TrueServe's AI platform saves an average of 11–16% on project costs vs. a traditional contractor — through reduced overruns, earlier defect detection, and safer jobsites. Use our ROI Calculator on this page to see your specific numbers!",
+  "do you work on municipal projects?": "Yes — that's our primary niche. Municipal and public infrastructure (parks, trails, greenways, public buildings) aligned with Charlotte 2040. We're the only Charlotte contractor combining AI + MBE status + municipal focus.",
+  "what is charlotte 2040?": "Charlotte 2040 is the city's long-term infrastructure and sustainability plan — investing billions in public spaces, smart city assets, greenways, and sustainable buildings. TrueServe is purpose-built to be the AI-powered contractor that helps execute that vision.",
+  "are you sustainable?": "Absolutely. Every TrueServe project follows LEED-aligned practices — solar-ready design, low-impact materials, and AI energy modeling. Sustainable building is one of our core service lines.",
+  "how does computer vision work?": "We install cameras across the jobsite that feed into our AI models 24/7. The system automatically detects missing PPE (hard hats, vests, gloves), flags unsafe behavior near heavy equipment, and identifies quality defects like cracks or misalignments — alerting supervisors instantly.",
+  "default": "Great question! I can best answer that over a quick call with our team. Fill out the contact form below and we'll be in touch within 24 hours — or ask me something else like 'How does the AI platform work?' or 'How do I get a bid?'"
+};
+
+function getBotResponse(msg) {
+  const lower = msg.toLowerCase().trim();
+  for (const key of Object.keys(responses)) {
+    if (key !== 'default' && lower.includes(key.replace('?', '').trim())) {
+      return responses[key];
+    }
+  }
+  return responses['default'];
+}
+
+function addMessage(text, sender) {
+  const div = document.createElement('div');
+  div.className = `chat-msg ${sender}`;
+  const bubble = document.createElement('div');
+  bubble.className = 'msg-bubble';
+  bubble.textContent = text;
+  div.appendChild(bubble);
+  chatMessages.appendChild(div);
+  chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+function sendMessage(text) {
+  if (!text.trim()) return;
+  addMessage(text, 'user');
+  // Remove suggestions after first real interaction
+  document.querySelector('.chat-suggestions')?.remove();
+
+  const typing = document.createElement('div');
+  typing.className = 'chat-msg bot chat-typing';
+  typing.innerHTML = '<div class="msg-bubble"></div>';
+  chatMessages.appendChild(typing);
+  chatMessages.scrollTop = chatMessages.scrollHeight;
+
+  setTimeout(() => {
+    typing.remove();
+    addMessage(getBotResponse(text), 'bot');
+  }, 900);
+}
+
+chatBubble?.addEventListener('click', () => {
+  chatBubble.classList.add('hidden');
+  chatWindow.classList.add('open');
+});
+
+chatClose?.addEventListener('click', () => {
+  chatWindow.classList.remove('open');
+  chatBubble.classList.remove('hidden');
+});
+
+chatSend?.addEventListener('click', () => {
+  sendMessage(chatInput.value);
+  chatInput.value = '';
+});
+
+chatInput?.addEventListener('keydown', e => {
+  if (e.key === 'Enter') { sendMessage(chatInput.value); chatInput.value = ''; }
+});
+
+document.querySelectorAll('.chat-suggest').forEach(btn => {
+  btn.addEventListener('click', () => sendMessage(btn.dataset.q));
+});
+
 // ROI Calculator
 const roiInputs = ['roi-duration', 'roi-subs', 'roi-workers'];
 roiInputs.forEach(id => {
