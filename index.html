@@ -209,6 +209,7 @@
 
   <!-- CONTACT -->
   <section id="contact" class="section-contact">
+    <canvas id="contact-canvas"></canvas>
     <div class="contact-diag"></div>
     <div class="container">
       <div class="contact-split">
@@ -333,5 +334,86 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="script.js"></script>
+  <script>
+    // ── CONTACT: particle network ──
+    (function () {
+      const canvas = document.getElementById('contact-canvas');
+      if (!canvas || typeof THREE === 'undefined') return;
+      const renderer = new THREE.WebGLRenderer({ canvas, antialias: false, alpha: true });
+      renderer.setPixelRatio(1);
+      renderer.setClearColor(0x000000, 0);
+      const scene = new THREE.Scene();
+      const camera = new THREE.OrthographicCamera(0, 1, 1, 0, -1, 1);
+
+      function resize() {
+        const w = canvas.clientWidth, h = canvas.clientHeight;
+        renderer.setSize(w, h, false);
+        camera.right = w; camera.top = h;
+        camera.updateProjectionMatrix();
+      }
+      resize();
+      window.addEventListener('resize', resize);
+
+      const COUNT = 55;
+      const nodes = Array.from({ length: COUNT }, () => ({
+        x: Math.random() * canvas.clientWidth,
+        y: Math.random() * canvas.clientHeight,
+        vx: (Math.random() - 0.5) * 0.4,
+        vy: (Math.random() - 0.5) * 0.4,
+      }));
+
+      // Dots
+      const dotPositions = new Float32Array(COUNT * 3);
+      const dotGeo = new THREE.BufferGeometry();
+      dotGeo.setAttribute('position', new THREE.BufferAttribute(dotPositions, 3));
+      const dotMat = new THREE.PointsMaterial({ color: 0xE85D04, size: 3, sizeAttenuation: false });
+      scene.add(new THREE.Points(dotGeo, dotMat));
+
+      // Lines
+      const maxLines = COUNT * COUNT;
+      const linePosArr = new Float32Array(maxLines * 6);
+      const lineGeo = new THREE.BufferGeometry();
+      lineGeo.setAttribute('position', new THREE.BufferAttribute(linePosArr, 3));
+      const lineMat = new THREE.LineBasicMaterial({ color: 0x0D0D0D, transparent: true, opacity: 0.7 });
+      const lineObj = new THREE.LineSegments(lineGeo, lineMat);
+      scene.add(lineObj);
+
+      const THRESH = 160;
+      let lineBuf = lineGeo.getAttribute('position');
+
+      function animate() {
+        requestAnimationFrame(animate);
+        const W = canvas.clientWidth, H = canvas.clientHeight;
+
+        nodes.forEach(n => {
+          n.x += n.vx; n.y += n.vy;
+          if (n.x < 0 || n.x > W) n.vx *= -1;
+          if (n.y < 0 || n.y > H) n.vy *= -1;
+          n.x = Math.max(0, Math.min(W, n.x));
+          n.y = Math.max(0, Math.min(H, n.y));
+        });
+
+        const dp = dotGeo.getAttribute('position');
+        nodes.forEach((n, i) => { dp.setXYZ(i, n.x, H - n.y, 0); });
+        dp.needsUpdate = true;
+
+        let li = 0;
+        for (let a = 0; a < COUNT; a++) {
+          for (let b = a + 1; b < COUNT; b++) {
+            const dx = nodes[a].x - nodes[b].x, dy = nodes[a].y - nodes[b].y;
+            if (dx * dx + dy * dy < THRESH * THRESH) {
+              lineBuf.setXYZ(li,     nodes[a].x, H - nodes[a].y, 0);
+              lineBuf.setXYZ(li + 1, nodes[b].x, H - nodes[b].y, 0);
+              li += 2;
+            }
+          }
+        }
+        lineGeo.setDrawRange(0, li);
+        lineBuf.needsUpdate = true;
+        renderer.render(scene, camera);
+      }
+      animate();
+    })();
+  </script>
 </body>
 </html>
