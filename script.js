@@ -4,13 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   setTimeout(() => {
     loader.classList.add('done');
-    setTimeout(() => {
-      loader.style.display = 'none';
-      // Trigger hero text animations after loader hides
-      const heroTitle = document.querySelector('.hero-title');
-      if (heroTitle) heroTitle.classList.add('animate');
-    }, 300);
-  }, 2000);
+    document.body.classList.add('loaded');
+  }, 2400);
 });
 
 // ============================================ NAV SCROLL
