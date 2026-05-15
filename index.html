@@ -51,27 +51,10 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-  <!-- LOADER -->
-  <div id="loader">
-    <div class="loader-inner">
-      <svg class="loader-svg" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid meet">
-        <line class="ll ll1" x1="0" y1="400" x2="600" y2="0"/>
-        <line class="ll ll2" x1="0" y1="0" x2="600" y2="400"/>
-        <line class="ll ll3" x1="300" y1="0" x2="300" y2="400"/>
-        <line class="ll ll4" x1="0" y1="200" x2="600" y2="200"/>
-      </svg>
-      <div class="loader-brand">
-        <div class="loader-name-wrap"><span class="loader-name">TRUESERVE</span></div>
-        <div class="loader-sub">CONSTRUCTION</div>
-        <div class="loader-progress"><div class="loader-fill"></div></div>
-      </div>
-    </div>
-  </div>
 
   <!-- NAV -->
   <nav id="navbar">
@@ -102,6 +85,7 @@
 
   <!-- HERO -->
   <section id="home" class="hero">
+    <canvas id="hero-canvas"></canvas>
     <div class="hero-inner container">
       <div class="hero-eyebrow">Charlotte, NC &mdash; Est. 2024</div>
       <h1 class="hero-title">
@@ -347,6 +331,7 @@
     </div>
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
