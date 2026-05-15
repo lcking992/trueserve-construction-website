@@ -56,6 +56,23 @@
 </head>
 <body>
 
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-inner">
+      <svg class="loader-svg" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid meet">
+        <line class="ll ll1" x1="0" y1="400" x2="600" y2="0"/>
+        <line class="ll ll2" x1="0" y1="0" x2="600" y2="400"/>
+        <line class="ll ll3" x1="300" y1="0" x2="300" y2="400"/>
+        <line class="ll ll4" x1="0" y1="200" x2="600" y2="200"/>
+      </svg>
+      <div class="loader-brand">
+        <div class="loader-name-wrap"><span class="loader-name">TRUESERVE</span></div>
+        <div class="loader-sub">CONSTRUCTION</div>
+        <div class="loader-progress"><div class="loader-fill"></div></div>
+      </div>
+    </div>
+  </div>
+
   <!-- NAV -->
   <nav id="navbar">
     <div class="nav-inner">
@@ -65,11 +82,9 @@
       </a>
       <ul class="nav-links">
         <li><a href="services.html">Services</a></li>
-        <li><a href="#niche">Our Niche</a></li>
-        <li><a href="#ai-solutions">AI Platform</a></li>
-        <li><a href="#roi-calculator">ROI Calculator</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="blog.html">Insights</a></li>
+        <li><a href="portal.html">Client Portal</a></li>
         <li><a href="#contact" class="nav-cta">Get a Bid</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Menu">
@@ -77,1210 +92,196 @@
       </button>
     </div>
     <div class="mobile-menu" id="mobileMenu">
-      <a href="#services">Services</a>
-      <a href="#niche">Our Niche</a>
-      <a href="#ai-solutions">AI Platform</a>
-      <a href="#roi-calculator">ROI Calculator</a>
+      <a href="services.html">Services</a>
       <a href="#projects">Projects</a>
-      <a href="#about">About</a>
+      <a href="blog.html">Insights</a>
+      <a href="portal.html">Client Portal</a>
       <a href="#contact">Get a Bid</a>
     </div>
   </nav>
 
   <!-- HERO -->
   <section id="home" class="hero">
-    <div class="hero-bg">
-      <div class="hero-grid"></div>
-      <div class="hero-glow glow-1"></div>
-      <div class="hero-glow glow-2"></div>
-    </div>
-    <div class="hero-content">
-      <div class="hero-badge">
-        <span class="badge-dot"></span>
-        Charlotte 2040 Aligned Builder
-      </div>
+    <div class="hero-inner container">
+      <div class="hero-eyebrow">Charlotte, NC &mdash; Est. 2024</div>
       <h1 class="hero-title">
-        Building the Future<br />
-        <span class="gradient-text">Smarter.</span>
-        <span class="gradient-text-green">Greener.</span>
-        <span class="gradient-text-gold">Stronger.</span>
+        <span class="reveal-wrap"><span class="reveal-text">We</span></span>
+        <span class="reveal-wrap"><span class="reveal-text rt-d2">Build</span></span>
+        <span class="reveal-wrap"><span class="reveal-text rt-d3 hero-accent">Different.</span></span>
       </h1>
-      <p class="hero-sub">
-        TrueServe Construction combines expert construction with AI technology and sustainable practices
-        to deliver projects that meet today's demands and Charlotte's 2040 vision.
-      </p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn-primary">Start Your Project</a>
-        <a href="#ai-solutions" class="btn-ghost">See Our AI Solutions ↓</a>
+      <div class="hero-bottom">
+        <p class="hero-sub">AI-integrated construction for Charlotte's municipal and public infrastructure. On time, on budget, on record.</p>
+        <a href="#contact" class="btn-primary">Start a Project</a>
       </div>
       <div class="hero-stats">
-        <div class="stat">
-          <span class="stat-num">100%</span>
-          <span class="stat-label">Safety Committed</span>
+        <div class="hero-stat">
+          <span class="hs-num" data-target="100">0</span><span class="hs-suffix">%</span>
+          <span class="hs-label">Safety Record</span>
         </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-num">AI</span>
-          <span class="stat-label">Integrated Builds</span>
+        <div class="hero-stat">
+          <span class="hs-num" data-target="47">0</span><span class="hs-suffix">+</span>
+          <span class="hs-label">Projects Delivered</span>
         </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-num">CLT</span>
-          <span class="stat-label">2040 Ready</span>
+        <div class="hero-stat">
+          <span class="hs-num" data-target="98">0</span><span class="hs-suffix">%</span>
+          <span class="hs-label">On-Time Rate</span>
         </div>
       </div>
     </div>
-    <div class="hero-visual">
-      <div class="city-graphic">
-        <div class="building b1"></div>
-        <div class="building b2"></div>
-        <div class="building b3"></div>
-        <div class="building b4"></div>
-        <div class="building b5"></div>
-        <div class="building b6"></div>
-        <div class="ai-pulse"></div>
-        <div class="ai-ring r1"></div>
-        <div class="ai-ring r2"></div>
-        <div class="ai-ring r3"></div>
-        <div class="data-line dl1"></div>
-        <div class="data-line dl2"></div>
-        <div class="data-line dl3"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- VALUE PROPS -->
-  <section class="value-strip">
-    <div class="container">
-      <div class="value-grid">
-        <div class="value-item">
-          <div>
-            <strong>Expert Construction</strong>
-            <span>Residential, commercial & infrastructure</span>
-          </div>
-        </div>
-        <div class="value-item">
-          <div>
-            <strong>AI-Powered Projects</strong>
-            <span>Smart kiosks, chatbots & automation</span>
-          </div>
-        </div>
-        <div class="value-item">
-          <div>
-            <strong>Sustainable Building</strong>
-            <span>Green materials & energy efficiency</span>
-          </div>
-        </div>
-        <div class="value-item">
-          <div>
-            <strong>Safety First Culture</strong>
-            <span>Zero-compromise on jobsite safety</span>
-          </div>
-        </div>
-        <div class="value-item">
-          <div>
-            <strong>Charlotte 2040 Aligned</strong>
-            <span>Built for the city's long-term vision</span>
-          </div>
-        </div>
-        <div class="value-item">
-          <div>
-            <strong>Fast Turnaround</strong>
-            <span>On-time, on-budget delivery</span>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div class="hero-diag"></div>
   </section>
 
   <!-- SERVICES -->
-  <section id="services" class="section">
+  <section id="services" class="section-services">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">What We Build</span>
-        <h2>Full-Spectrum Construction <br /><span class="gradient-text">Services</span></h2>
-        <p>From ground-up commercial builds to sustainable renovations, TrueServe Construction delivers quality at every scale.</p>
+      <div class="section-eyebrow"><span class="ey-num">01</span><span>Services</span></div>
+      <h2 class="section-title">What We Build</h2>
+      <div class="services-list">
+        <a href="services.html#commercial" class="service-row fade-up">
+          <span class="sr-num">01</span>
+          <div class="sr-body">
+            <h3>Commercial Construction</h3>
+            <p>Ground-up builds, fit-outs, and smart building integration for Charlotte businesses.</p>
+          </div>
+          <span class="sr-arrow">&#8594;</span>
+        </a>
+        <a href="services.html#residential" class="service-row fade-up">
+          <span class="sr-num">02</span>
+          <div class="sr-body">
+            <h3>Residential Renovation</h3>
+            <p>Full gut renovations, kitchen &amp; bath remodels, and energy upgrades.</p>
+          </div>
+          <span class="sr-arrow">&#8594;</span>
+        </a>
+        <a href="services.html#municipal" class="service-row fade-up">
+          <span class="sr-num">03</span>
+          <div class="sr-body">
+            <h3>Municipal Infrastructure</h3>
+            <p>Public parks, trails, and smart city assets built for Charlotte 2040.</p>
+          </div>
+          <span class="sr-arrow">&#8594;</span>
+        </a>
+        <a href="services.html#sustainable" class="service-row fade-up">
+          <span class="sr-num">04</span>
+          <div class="sr-body">
+            <h3>Sustainable Building</h3>
+            <p>LEED-aligned design, solar-ready construction, and low-impact materials.</p>
+          </div>
+          <span class="sr-arrow">&#8594;</span>
+        </a>
       </div>
-      <div class="services-grid">
-        <div class="service-card featured">
-          <h3>Commercial Construction</h3>
-          <p>Office buildings, retail spaces, and mixed-use developments built to modern codes and smart city standards.</p>
-          <ul>
-            <li>Ground-up builds</li>
-            <li>Commercial fit-outs</li>
-            <li>Smart building integration</li>
-          </ul>
-          <a href="services.html#commercial" class="service-link">Learn More →</a>
-        </div>
-        <div class="service-card">
-          <h3>Residential Renovations</h3>
-          <p>Transform existing homes and multifamily units with modern upgrades, energy efficiency, and premium finishes.</p>
-          <ul>
-            <li>Full gut renovations</li>
-            <li>Kitchen & bath remodels</li>
-            <li>Energy upgrades</li>
-          </ul>
-          <a href="services.html#residential" class="service-link">Learn More →</a>
-        </div>
-        <div class="service-card">
-          <h3>Sustainable Building</h3>
-          <p>Green construction practices, eco-friendly materials, and energy-efficient designs aligned with LEED standards.</p>
-          <ul>
-            <li>LEED-aligned design</li>
-            <li>Solar-ready construction</li>
-            <li>Low-impact materials</li>
-          </ul>
-          <a href="services.html#sustainable" class="service-link">Learn More →</a>
-        </div>
-        <div class="service-card">
-          <h3>Municipal Infrastructure</h3>
-          <p>Public infrastructure, parks, and trail systems equipped with AI kiosks and smart connectivity.</p>
-          <ul>
-            <li>Trail & park development</li>
-            <li>AI kiosk installation</li>
-            <li>Smart city infrastructure</li>
-          </ul>
-          <a href="services.html#municipal" class="service-link">Learn More →</a>
-        </div>
-        <div class="service-card">
-          <h3>Project Management</h3>
-          <p>End-to-end project oversight with transparent communication, precise scheduling, and cost control.</p>
-          <ul>
-            <li>Estimating & bidding</li>
-            <li>Subcontractor management</li>
-            <li>Quality control</li>
-          </ul>
-          <a href="services.html#pm" class="service-link">Learn More →</a>
-        </div>
-        <div class="service-card">
-          <h3>Joint Ventures</h3>
-          <p>Partner with TrueServe Construction on larger projects through joint ventures or subcontracting arrangements.</p>
-          <ul>
-            <li>Strategic partnerships</li>
-            <li>Subcontracting</li>
-            <li>Capacity scaling</li>
-          </ul>
-          <a href="services.html#joint-venture" class="service-link">Learn More →</a>
-        </div>
-      </div>
-      <div style="text-align:center;margin-top:40px;">
-        <a href="services.html" class="btn-primary">View All Services →</a>
+      <div class="services-footer">
+        <a href="services.html" class="btn-outline-dark">All Services &#8594;</a>
       </div>
     </div>
-  </section>
-
-  <!-- NICHE DOMINATION -->
-  <section id="niche" class="section dark-section niche-section">
-    <div class="container">
-      <div class="niche-hero">
-        <div class="niche-hero-left">
-          <span class="section-tag tag-gold">Our Niche</span>
-          <h2>One Market.<br /><span class="gradient-text-gold">Total Domination.</span></h2>
-          <p>The most dangerous strategy in construction is trying to do everything. TrueServe is going all-in on one niche where AI gives us an edge no competitor can close.</p>
-          <div class="niche-focus-badge">
-            <div>
-              <h3>Municipal & Public Infrastructure</h3>
-              <span class="nb-sub">Parks · Trails · Greenways · Public Buildings · Smart City Assets</span>
-            </div>
-          </div>
-          <div class="niche-stats-row">
-            <div class="ns-item">
-              <span class="ns-num">$0</span>
-              <span class="ns-label">Local competitors using AI on municipal projects</span>
-            </div>
-            <div class="ns-divider"></div>
-            <div class="ns-item">
-              <span class="ns-num">$B</span>
-              <span class="ns-label">Charlotte 2040 public infrastructure investment</span>
-            </div>
-            <div class="ns-divider"></div>
-            <div class="ns-item">
-              <span class="ns-num">1st</span>
-              <span class="ns-label">AI-integrated contractor in this space in CLT</span>
-            </div>
-          </div>
-        </div>
-        <div class="niche-hero-right">
-          <div class="niche-why-grid">
-            <div class="nw-card">
-              <div class="nw-num">01</div>
-              <h4>Underserved by AI</h4>
-              <p>Zero local contractors are using AI on municipal projects. First mover wins long-term contracts and becomes the city's trusted partner.</p>
-            </div>
-            <div class="nw-card">
-              <div class="nw-num">02</div>
-              <h4>Charlotte is Investing Billions</h4>
-              <p>Charlotte 2040 allocates massive capital to public infrastructure. Long, recurring, publicly funded pipeline — lowest collection risk in construction.</p>
-            </div>
-            <div class="nw-card">
-              <div class="nw-num">03</div>
-              <h4>Compliance = Our Advantage</h4>
-              <p>Municipal projects have strict safety and quality requirements. Our computer vision turns regulatory burden into a sales feature.</p>
-            </div>
-            <div class="nw-card">
-              <div class="nw-num">04</div>
-              <h4>Data Compounds Over Time</h4>
-              <p>Every project adds to our Charlotte benchmark database. 5 years in, our cost and schedule accuracy becomes impossible to match.</p>
-            </div>
-            <div class="nw-card">
-              <div class="nw-num">05</div>
-              <h4>Live Proof of Concept</h4>
-              <p>Our AI trail kiosk system is a working demo we can show every parks department in Mecklenburg County today.</p>
-            </div>
-            <div class="nw-card">
-              <div class="nw-num">06</div>
-              <h4>Reputation Transfers Up</h4>
-              <p>Win 5 flawless municipal projects. That record opens doors to larger commercial developers who want the same AI-driven precision.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOW WE WORK -->
-  <section id="process" class="section dark-section">
-    <div class="container">
-      <div class="section-header light">
-        <span class="section-tag tag-gold">How We Work</span>
-        <h2>Your Project, From First Call <br /><span class="gradient-text-gold">to Final Walkthrough</span></h2>
-        <p>Every TrueServe project follows the same proven process — transparent, AI-monitored, and built around keeping you informed at every step.</p>
-      </div>
-      <div class="process-timeline">
-        <div class="process-line"></div>
-        <div class="process-step">
-          <div class="ps-num">01</div>
-          <div class="ps-content">
-            <h3>Discovery Call</h3>
-            <p>We learn your project goals, timeline, budget, and constraints. No generic quotes — we ask the right questions upfront so nothing surprises you later.</p>
-            <div class="ps-tags">
-              <span>Free consultation</span>
-              <span>24hr response</span>
-            </div>
-          </div>
-        </div>
-        <div class="process-step">
-          <div class="ps-num">02</div>
-          <div class="ps-content">
-            <h3>AI-Powered Estimate</h3>
-            <p>Our AI models generate a precise bid using Charlotte-specific cost benchmarks, subcontractor risk scores, and schedule simulations — not gut instinct.</p>
-            <div class="ps-tags">
-              <span>Benchmark-based pricing</span>
-              <span>Risk analysis included</span>
-            </div>
-          </div>
-        </div>
-        <div class="process-step">
-          <div class="ps-num">03</div>
-          <div class="ps-content">
-            <h3>Build & Monitor</h3>
-            <p>Construction begins with our full AI platform active — computer vision on site, predictive alerts running, and the field–office feedback loop live from day one.</p>
-            <div class="ps-tags">
-              <span>Computer vision active</span>
-              <span>Daily AI reports</span>
-            </div>
-          </div>
-        </div>
-        <div class="process-step">
-          <div class="ps-num">04</div>
-          <div class="ps-content">
-            <h3>Live Client Dashboard</h3>
-            <p>You get a real-time dashboard with progress photos, milestone tracking, budget variance, and AI alerts. No more "how's it going?" calls — you already know.</p>
-            <div class="ps-tags">
-              <span>24/7 access</span>
-              <span>Mobile-friendly</span>
-            </div>
-          </div>
-        </div>
-        <div class="process-step">
-          <div class="ps-num">05</div>
-          <div class="ps-content">
-            <h3>Handoff & Benchmarks</h3>
-            <p>Project complete. You receive full documentation, warranties, and a post-project report. Your data feeds our benchmark database — making every future project smarter.</p>
-            <div class="ps-tags">
-              <span>Full documentation</span>
-              <span>Post-project AI report</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="process-cta">
-        <a href="#contact" class="btn-primary">Start with a Discovery Call</a>
-        <span class="pcta-note">Free · No commitment · Response within 24 hours</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- AI PLATFORM -->
-  <section id="ai-solutions" class="section dark-section">
-    <div class="container">
-      <div class="section-header light">
-        <span class="section-tag tag-blue">TrueServe AI Platform</span>
-        <h2>The Construction Industry's Most <br /><span class="gradient-text">Intelligent Jobsite</span></h2>
-        <p>While other contractors react to problems, TrueServe predicts them. Our AI platform turns raw jobsite data into decisions — before delays, overruns, and incidents happen.</p>
-      </div>
-
-      <!-- TAB NAV -->
-      <div class="platform-tabs">
-        <button class="ptab active" data-tab="predict">Predictive Intelligence</button>
-        <button class="ptab" data-tab="vision">Computer Vision</button>
-        <button class="ptab" data-tab="feedback">Field–Office Loop</button>
-        <button class="ptab" data-tab="benchmarks">Proprietary Benchmarks</button>
-        <button class="ptab" data-tab="kiosk">Smart Kiosks</button>
-
-      </div>
-
-      <!-- PREDICT TAB -->
-      <div class="platform-panel active" id="tab-predict">
-        <div class="panel-split">
-          <div class="panel-content">
-            <h3>See Problems <span class="gradient-text">Before They Happen</span></h3>
-            <p>Our predictive models analyze hundreds of data points — weather, crew capacity, material lead times, subcontractor history — to flag risks weeks before they become costly.</p>
-            <div class="predict-features">
-              <div class="pf-item">
-                <div>
-                  <h4>Schedule Delay Prediction</h4>
-                  <p>AI forecasts potential delays 2–4 weeks out based on current progress, weather forecasts, and resource availability — giving you time to act.</p>
-                </div>
-              </div>
-              <div class="pf-item">
-                <div>
-                  <h4>Subcontractor Risk Flagging</h4>
-                  <p>Every subcontractor gets a live risk score based on past performance, current workload, and financial health signals — before you sign a contract.</p>
-                </div>
-              </div>
-              <div class="pf-item">
-                <div>
-                  <h4>Cost Overrun Forecasting</h4>
-                  <p>Real-time budget variance analysis catches overruns at 5% before they reach 20% — when there's still time to course-correct.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="panel-visual">
-            <div class="predict-dashboard">
-              <div class="dash-header">
-                <span class="dash-title">Project Intelligence</span>
-                <span class="dash-live"><span class="live-dot"></span>Live</span>
-              </div>
-              <div class="risk-meters">
-                <div class="risk-row">
-                  <span class="rr-label">Schedule Risk</span>
-                  <div class="risk-bar-wrap">
-                    <div class="risk-bar rb-warn" style="width:62%"></div>
-                  </div>
-                  <span class="rr-val warn">62%</span>
-                </div>
-                <div class="risk-row">
-                  <span class="rr-label">Cost Variance</span>
-                  <div class="risk-bar-wrap">
-                    <div class="risk-bar rb-good" style="width:18%"></div>
-                  </div>
-                  <span class="rr-val good">+18%</span>
-                </div>
-                <div class="risk-row">
-                  <span class="rr-label">Sub Risk — Elec.</span>
-                  <div class="risk-bar-wrap">
-                    <div class="risk-bar rb-danger" style="width:81%"></div>
-                  </div>
-                  <span class="rr-val danger">HIGH</span>
-                </div>
-                <div class="risk-row">
-                  <span class="rr-label">Sub Risk — HVAC</span>
-                  <div class="risk-bar-wrap">
-                    <div class="risk-bar rb-good" style="width:24%"></div>
-                  </div>
-                  <span class="rr-val good">LOW</span>
-                </div>
-              </div>
-              <div class="dash-alert">
-                <span><strong>AI Alert:</strong> Electrical sub showing 3 late deliveries this quarter. Recommend backup vendor by Week 6.</span>
-              </div>
-              <div class="dash-forecast">
-                <div class="fc-bar" style="height:40%"></div>
-                <div class="fc-bar" style="height:55%"></div>
-                <div class="fc-bar" style="height:45%"></div>
-                <div class="fc-bar" style="height:70%"></div>
-                <div class="fc-bar fc-current" style="height:62%"></div>
-                <div class="fc-bar fc-pred" style="height:75%"></div>
-                <div class="fc-bar fc-pred" style="height:68%"></div>
-                <div class="fc-bar fc-pred" style="height:50%"></div>
-              </div>
-              <div class="dash-fc-label">
-                <span>Actual spend vs AI forecast (next 4 weeks)</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- VISION TAB -->
-      <div class="platform-panel" id="tab-vision">
-        <div class="panel-split">
-          <div class="panel-content">
-            <h3>Eyes on Every <span class="gradient-text">Inch of the Jobsite</span></h3>
-            <p>Cameras placed across the site feed real-time video into our computer vision models. Every frame is analyzed for safety, quality, and compliance — 24/7, without fatigue.</p>
-            <div class="predict-features">
-              <div class="pf-item">
-                <div>
-                  <h4>PPE Compliance Tracking</h4>
-                  <p>Instantly detects missing hard hats, vests, gloves, and eye protection. Alerts supervisors in real time. Every violation is logged with timestamp and location.</p>
-                </div>
-              </div>
-              <div class="pf-item">
-                <div>
-                  <h4>Quality Defect Detection</h4>
-                  <p>AI identifies cracks, misalignments, improper installs, and missing components as they happen — not during final inspection when fixes cost 10x more.</p>
-                </div>
-              </div>
-              <div class="pf-item">
-                <div>
-                  <h4>Unsafe Behavior Detection</h4>
-                  <p>Recognizes dangerous movements near heavy equipment, restricted zone violations, and working-at-height without fall protection before accidents occur.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="panel-visual">
-            <div class="cv-dashboard">
-              <div class="dash-header">
-                <span class="dash-title">Site Vision — Zone A</span>
-                <span class="dash-live"><span class="live-dot"></span>Recording</span>
-              </div>
-              <div class="camera-feed">
-                <div class="cf-bg"></div>
-                <div class="detection-box db-ppe ok">
-                  <span class="db-label ok-label">✓ PPE</span>
-                </div>
-                <div class="detection-box db-worker">
-                  <span class="db-label ok-label">✓ PPE</span>
-                </div>
-                <div class="detection-box db-violation">
-                  <span class="db-label warn-label">⚠ No Hard Hat</span>
-                </div>
-                <div class="detection-box db-quality">
-                  <span class="db-label warn-label">Review</span>
-                </div>
-                <div class="scan-line"></div>
-              </div>
-              <div class="cv-stats">
-                <div class="cv-stat">
-                  <span class="cvs-num green-num">94%</span>
-                  <span class="cvs-label">PPE Compliance</span>
-                </div>
-                <div class="cv-stat">
-                  <span class="cvs-num warn-num">2</span>
-                  <span class="cvs-label">Active Alerts</span>
-                </div>
-                <div class="cv-stat">
-                  <span class="cvs-num green-num">0</span>
-                  <span class="cvs-label">Incidents Today</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- FEEDBACK TAB -->
-      <div class="platform-panel" id="tab-feedback">
-        <div class="panel-split">
-          <div class="panel-content">
-            <h3>Field and Office <span class="gradient-text">Finally Speak the Same Language</span></h3>
-            <p>Most construction problems start as small field issues that never reach the office in time. TrueServe closes that gap with a real-time feedback loop that keeps everyone aligned.</p>
-            <div class="predict-features">
-              <div class="pf-item">
-                <div>
-                  <h4>Instant Field Reports</h4>
-                  <p>Workers submit issues, photos, and status updates via mobile — instantly visible to the PM, owner, and client in a shared dashboard.</p>
-                </div>
-              </div>
-              <div class="pf-item">
-                <div>
-                  <h4>Closed-Loop Issue Tracking</h4>
-                  <p>Every field issue gets a ticket, an owner, and a deadline. Nothing falls through. AI prioritizes the list based on schedule impact.</p>
-                </div>
-              </div>
-              <div class="pf-item">
-                <div>
-                  <h4>Live Client Transparency</h4>
-                  <p>Clients get a read-only dashboard with real-time progress, photos, and milestone updates — eliminating the "how's it going?" call entirely.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="panel-visual">
-            <div class="loop-diagram">
-              <div class="loop-node field-node">
-                <span>Field Crew</span>
-              </div>
-              <div class="loop-arrow la-up">
-                <div class="arrow-line"></div>
-                <div class="arrow-label">Issues, Photos, Progress</div>
-              </div>
-              <div class="loop-node ai-node">
-                <span>AI Engine</span>
-              </div>
-              <div class="loop-arrow la-right">
-                <div class="arrow-line"></div>
-                <div class="arrow-label">Prioritized Alerts</div>
-              </div>
-              <div class="loop-node office-node">
-                <span>Project Office</span>
-              </div>
-              <div class="loop-arrow la-down">
-                <div class="arrow-line"></div>
-                <div class="arrow-label">Decisions &amp; Directives</div>
-              </div>
-              <div class="loop-node client-node">
-                <span>Client</span>
-              </div>
-              <div class="loop-issues">
-                <div class="issue-card ic-open">
-                  <span class="ic-tag open-tag">Open</span>
-                  <span class="ic-text">Missing rebar — Grid C4</span>
-                  <span class="ic-meta">Zone B · 2h ago</span>
-
-                </div>
-                <div class="issue-card ic-closed">
-                  <span class="ic-tag closed-tag">Resolved</span>
-                  <span class="ic-text">Concrete pour delayed — rain</span>
-                  <span class="ic-meta">✓ Rescheduled Wed</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- BENCHMARKS TAB -->
-      <div class="platform-panel" id="tab-benchmarks">
-        <div class="panel-split">
-          <div class="panel-content">
-            <h3>Data That Becomes <span class="gradient-text">a Competitive Moat</span></h3>
-            <p>Every project TrueServe completes feeds our proprietary benchmark database. Over time, we build intelligence no competitor can buy — because they weren't in the field collecting it.</p>
-            <div class="predict-features">
-              <div class="pf-item">
-                <div>
-                  <h4>Charlotte-Specific Cost Benchmarks</h4>
-                  <p>Real cost-per-sqft, material costs, and labor rates specific to Charlotte's market — not national averages. Our bids are more accurate than anyone else's.</p>
-                </div>
-              </div>
-              <div class="pf-item">
-                <div>
-                  <h4>Task Duration Intelligence</h4>
-                  <p>We know how long every trade takes on every project type in this market. Our schedules aren't guesses — they're built on thousands of real data points.</p>
-                </div>
-              </div>
-              <div class="pf-item">
-                <div>
-                  <h4>Subcontractor Performance Index</h4>
-                  <p>A proprietary score for every sub we've worked with — on-time rate, quality rate, communication score. We only partner with proven performers.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="panel-visual">
-            <div class="benchmark-dashboard">
-              <div class="dash-header">
-                <span class="dash-title">TrueServe Benchmark Index</span>
-                <span class="bm-projects">47 projects</span>
-              </div>
-              <div class="bm-grid">
-                <div class="bm-card">
-                  <span class="bm-num">$187</span>
-                  <span class="bm-label">Avg. cost/sqft<br/>Commercial CLT</span>
-                  <span class="bm-delta up">↑ 3% vs market</span>
-                </div>
-                <div class="bm-card">
-                  <span class="bm-num">94%</span>
-                  <span class="bm-label">On-time delivery<br/>rate (our avg)</span>
-                  <span class="bm-delta up">↑ 18% vs industry</span>
-                </div>
-                <div class="bm-card">
-                  <span class="bm-num">2.1x</span>
-                  <span class="bm-label">Faster defect<br/>detection</span>
-                  <span class="bm-delta up">vs traditional QC</span>
-                </div>
-                <div class="bm-card">
-                  <span class="bm-num">0.8%</span>
-                  <span class="bm-label">Avg. cost overrun<br/>(our projects)</span>
-                  <span class="bm-delta up">vs 12% industry avg</span>
-                </div>
-              </div>
-              <div class="bm-bar-section">
-                <span class="bm-bar-title">Top Sub Performance Scores</span>
-                <div class="sub-row"><span>Framing Co. A</span><div class="sub-bar" style="width:92%"></div><span>92</span></div>
-                <div class="sub-row"><span>Electrical LLC</span><div class="sub-bar sb-warn" style="width:71%"></div><span>71</span></div>
-                <div class="sub-row"><span>Plumbing Inc.</span><div class="sub-bar" style="width:88%"></div><span>88</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- KIOSK TAB -->
-      <div class="platform-panel" id="tab-kiosk">
-        <div class="panel-split">
-          <div class="panel-content">
-            <h3>AI Kiosks That <span class="gradient-text">Serve Communities</span></h3>
-            <p>TrueServe doesn't just build trails and parks — we make them smarter. Our AI-powered kiosks turn public infrastructure into interactive, data-rich community assets.</p>
-            <div class="predict-features">
-              <div class="pf-item">
-                <div>
-                  <h4>Real-Time Trail Navigation</h4>
-                  <p>GPS-enabled interactive maps with remaining distance, connecting trails, difficulty ratings, and live points of interest.</p>
-                </div>
-              </div>
-              <div class="pf-item">
-                <div>
-                  <h4>Full ADA Accessibility</h4>
-                  <p>Audio descriptions, adjustable font sizes, and ADA-compliant interfaces ensure every community member can use the system.</p>
-                </div>
-              </div>
-              <div class="pf-item">
-                <div>
-                  <h4>Usage Analytics for Parks Depts</h4>
-                  <p>Trail usage heatmaps, peak time data, and maintenance feedback — giving parks departments real intelligence for resource planning.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="panel-visual">
-            <div class="predict-dashboard">
-              <div class="dash-header">
-                <span class="dash-title">TrueServe Trail System</span>
-                <span class="dash-live"><span class="live-dot"></span>Live</span>
-              </div>
-              <div class="kiosk-body" style="padding:12px; gap:12px; display:grid; grid-template-columns:1.4fr 1fr;">
-                <div class="kiosk-map" style="height:130px;">
-                  <div class="trail-line tl1"></div>
-                  <div class="trail-line tl2"></div>
-                  <div class="trail-line tl3"></div>
-                  <div class="trail-dot td1"></div>
-                  <div class="trail-dot td2"></div>
-                  <div class="trail-dot td3"></div>
-                  <div class="you-are-here">•</div>
-                </div>
-                <div class="kiosk-info">
-                  <div class="kiosk-stat-row"><span class="k-label">Trail Length</span><span class="k-val">3.2 mi</span></div>
-                  <div class="kiosk-stat-row"><span class="k-label">Remaining</span><span class="k-val">1.8 mi</span></div>
-                  <div class="kiosk-stat-row"><span class="k-label">Difficulty</span><span class="k-val easy">Easy</span></div>
-                  <div class="kiosk-stat-row"><span class="k-label">Connections</span><span class="k-val">4 trails</span></div>
-                </div>
-              </div>
-              <div class="kiosk-footer-bar">
-                <span>Restroom 0.3mi</span><span>Water 0.7mi</span><span>Overlook 1.1mi</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ROI CALCULATOR -->
-  <section id="roi-calculator" class="section dark-section">
-    <div class="container">
-      <div class="section-header light">
-        <span class="section-tag tag-green">ROI Calculator</span>
-        <h2>See What AI-Driven Construction <br /><span class="gradient-text">Saves You</span></h2>
-        <p>Enter your project details and see exactly how much TrueServe's AI platform saves compared to a traditional contractor.</p>
-      </div>
-      <div class="roi-layout">
-        <div class="roi-inputs">
-          <h4>Your Project</h4>
-          <div class="roi-field">
-            <label>Project Type</label>
-            <div class="roi-select-wrap">
-              <select id="roi-type">
-                <option value="commercial">Commercial Construction</option>
-                <option value="residential">Residential Renovation</option>
-                <option value="infrastructure">Public Infrastructure / Trail</option>
-                <option value="mixed">Mixed-Use Development</option>
-              </select>
-            </div>
-          </div>
-          <div class="roi-field">
-            <label>Total Project Budget</label>
-            <div class="roi-input-wrap">
-              <span class="roi-prefix">$</span>
-              <input type="number" id="roi-budget" value="500000" min="50000" max="50000000" step="10000" />
-            </div>
-          </div>
-          <div class="roi-field">
-            <label>Project Duration (months)</label>
-            <div class="roi-slider-wrap">
-              <input type="range" id="roi-duration" min="2" max="36" value="12" class="roi-slider" />
-              <span class="roi-slider-val"><span id="roi-duration-val">12</span> months</span>
-            </div>
-          </div>
-          <div class="roi-field">
-            <label>Number of Subcontractors</label>
-            <div class="roi-slider-wrap">
-              <input type="range" id="roi-subs" min="1" max="20" value="5" class="roi-slider" />
-              <span class="roi-slider-val"><span id="roi-subs-val">5</span> subs</span>
-            </div>
-          </div>
-          <div class="roi-field">
-            <label>Team Size (workers on site)</label>
-            <div class="roi-slider-wrap">
-              <input type="range" id="roi-workers" min="5" max="200" value="25" step="5" class="roi-slider" />
-              <span class="roi-slider-val"><span id="roi-workers-val">25</span> workers</span>
-            </div>
-          </div>
-          <button class="btn-primary full-width" id="roi-calc-btn">Calculate My Savings →</button>
-        </div>
-
-        <div class="roi-results" id="roi-results">
-          <div class="roi-results-header">
-            <h4>Estimated Savings with TrueServe AI</h4>
-            <span class="roi-total-label">Total Projected Savings</span>
-            <div class="roi-total" id="roi-total">$0</div>
-          </div>
-          <div class="roi-breakdown">
-            <div class="roi-row">
-              <div class="roir-left">
-                <span class="roir-icon"></span>
-                <div>
-                  <span class="roir-label">Schedule Delay Prevention</span>
-                  <span class="roir-desc">Industry avg: 20% over — TrueServe avg: 4%</span>
-                </div>
-              </div>
-              <span class="roir-val" id="roi-schedule">—</span>
-            </div>
-            <div class="roi-row">
-              <div class="roir-left">
-                <span class="roir-icon"></span>
-                <div>
-                  <span class="roir-label">Cost Overrun Reduction</span>
-                  <span class="roir-desc">Industry avg: 12% over — TrueServe avg: 0.8%</span>
-                </div>
-              </div>
-              <span class="roir-val" id="roi-overrun">—</span>
-            </div>
-            <div class="roi-row">
-              <div class="roir-left">
-                <span class="roir-icon"></span>
-                <div>
-                  <span class="roir-label">Safety Incident Prevention</span>
-                  <span class="roir-desc">Avg incident cost: $42k — CV reduces risk by 68%</span>
-                </div>
-              </div>
-              <span class="roir-val" id="roi-safety">—</span>
-            </div>
-            <div class="roi-row">
-              <div class="roir-left">
-                <span class="roir-icon"></span>
-                <div>
-                  <span class="roir-label">Early Defect Detection</span>
-                  <span class="roir-desc">Catching defects in-phase vs post-build: 6x cheaper</span>
-                </div>
-              </div>
-              <span class="roir-val" id="roi-defect">—</span>
-            </div>
-            <div class="roi-row">
-              <div class="roir-left">
-                <span class="roir-icon"></span>
-                <div>
-                  <span class="roir-label">Subcontractor Risk Avoidance</span>
-                  <span class="roir-desc">AI flags high-risk subs before contract signing</span>
-                </div>
-              </div>
-              <span class="roir-val" id="roi-sub">—</span>
-            </div>
-          </div>
-          <div class="roi-disclaimer">
-            * Estimates based on industry benchmarks (McKinsey, KPMG construction reports) and TrueServe project data. Actual savings vary by project.
-          </div>
-          <a href="#contact" class="btn-primary full-width">Get a Real Analysis for My Project</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SUSTAINABLE -->
-  <section id="sustainable" class="section">
-    <div class="container">
-      <div class="sustainable-split">
-        <div class="sus-content">
-          <span class="section-tag tag-green">Sustainable Building</span>
-          <h2>Built Green.<br /><span class="gradient-text-green">Built to Last.</span></h2>
-          <p>TrueServe Construction is conducting a deep dive into sustainable construction — investing in the practices, materials, and certifications that make buildings better for people and the planet.</p>
-          <div class="sus-pillars">
-            <div class="pillar">
-              <div>
-                <h4>Solar-Ready Design</h4>
-                <p>Every build is designed to accommodate solar panels and renewable energy systems.</p>
-              </div>
-            </div>
-            <div class="pillar">
-              <div>
-                <h4>Recycled & Low-Impact Materials</h4>
-                <p>We source eco-friendly materials that reduce waste and environmental footprint.</p>
-              </div>
-            </div>
-            <div class="pillar">
-              <div>
-                <h4>Energy Efficiency Modeling</h4>
-                <p>AI energy modeling predicts building performance before construction begins.</p>
-              </div>
-            </div>
-            <div class="pillar">
-              <div>
-                <h4>LEED-Aligned Process</h4>
-                <p>Our construction process follows LEED principles for green building certification.</p>
-              </div>
-            </div>
-          </div>
-          <a href="#contact" class="btn-primary">Discuss a Green Build</a>
-        </div>
-        <div class="sus-visual">
-          <div class="green-building">
-            <div class="gb-body">
-              <div class="gb-window gw1"></div>
-              <div class="gb-window gw2"></div>
-              <div class="gb-window gw3"></div>
-              <div class="gb-window gw4"></div>
-              <div class="gb-window gw5"></div>
-              <div class="gb-window gw6"></div>
-              <div class="solar-panel sp1"></div>
-              <div class="solar-panel sp2"></div>
-              <div class="solar-panel sp3"></div>
-              <div class="energy-flow ef1"></div>
-              <div class="energy-flow ef2"></div>
-            </div>
-            <div class="gb-ground"></div>
-          </div>
-          <div class="sus-stats">
-            <div class="sus-stat">
-              <span class="ss-num">30%</span>
-              <span class="ss-label">Energy savings vs standard builds</span>
-            </div>
-            <div class="sus-stat">
-              <span class="ss-num">LEED</span>
-              <span class="ss-label">Aligned construction process</span>
-            </div>
-            <div class="sus-stat">
-              <span class="ss-num">2040</span>
-              <span class="ss-label">Charlotte sustainability goal aligned</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- VALUE PROPOSITIONS -->
-  <section class="section dark-section" id="why-us">
-    <div class="container">
-      <div class="section-header light">
-        <span class="section-tag tag-gold">Why TrueServe Construction</span>
-        <h2>Six Reasons Clients <br /><span class="gradient-text-gold">Choose Us</span></h2>
-      </div>
-      <div class="vp-grid">
-        <div class="vp-card">
-          <div class="vp-num">01</div>
-          <h3>AI-First Construction</h3>
-          <p>We integrate AI into every phase — from AI-powered kiosks and safety monitoring to smart project tracking dashboards clients can access anytime.</p>
-        </div>
-        <div class="vp-card">
-          <div class="vp-num">02</div>
-          <h3>Charlotte 2040 Expertise</h3>
-          <p>We understand Charlotte's long-term smart city vision and design every project to align with and contribute to that future infrastructure.</p>
-        </div>
-        <div class="vp-card">
-          <div class="vp-num">03</div>
-          <h3>Sustainable by Default</h3>
-          <p>Green building isn't an add-on — it's built into our standard process. Every project considers energy, materials, and environmental impact.</p>
-        </div>
-        <div class="vp-card">
-          <div class="vp-num">04</div>
-          <h3>Radical Transparency</h3>
-          <p>Real-time project dashboards, proactive communication, and honest conversations about timelines and budgets — always.</p>
-        </div>
-        <div class="vp-card">
-          <div class="vp-num">05</div>
-          <h3>Safety Culture</h3>
-          <p>Safety isn't a compliance checkbox — it's a core value. We use technology and training to ensure every worker goes home safe every day.</p>
-        </div>
-        <div class="vp-card">
-          <div class="vp-num">06</div>
-          <h3>Community-Focused Builds</h3>
-          <p>We build for people — trails, parks, community spaces — with accessibility and user experience at the center of every design decision.</p>
-        </div>
-      </div>
-    </div>
+    <div class="services-diag"></div>
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects" class="section">
+  <section id="projects" class="section-projects">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Portfolio</span>
-        <h2>Our Work in <span class="gradient-text">Charlotte</span></h2>
-        <p>From smart infrastructure to sustainable commercial builds — here's what we've been building.</p>
-      </div>
-      <div class="projects-grid">
-        <div class="project-card pc-large">
-          <div class="project-img pi-1">
-            <div class="project-overlay">
-              <span class="proj-tag">AI Infrastructure</span>
-              <h3>Eastway Trail Smart Kiosk Network</h3>
-              <p>Installed 8 AI-powered interactive kiosks across 12 miles of trail with real-time conditions and route planning.</p>
-              <a href="#contact" class="proj-link">View Project →</a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-img pi-2">
-            <div class="project-overlay">
-              <span class="proj-tag">Sustainable</span>
-              <h3>LEED-Ready Office Complex</h3>
-              <p>3-story commercial build with solar-ready roofing and energy-efficient systems.</p>
-              <a href="#contact" class="proj-link">View Project →</a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-img pi-3">
-            <div class="project-overlay">
-              <span class="proj-tag">Commercial</span>
-              <h3>Mixed-Use Development</h3>
-              <p>Retail ground floor with 24 residential units above, smart city infrastructure ready.</p>
-              <a href="#contact" class="proj-link">View Project →</a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-img pi-4">
-            <div class="project-overlay">
-              <span class="proj-tag">Residential</span>
-              <h3>Historic Home Renovation</h3>
-              <p>Full gut renovation preserving character while bringing energy performance to modern standards.</p>
-              <a href="#contact" class="proj-link">View Project →</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="projects-cta">
-        <p>Ready to add your project to this portfolio?</p>
-        <a href="#contact" class="btn-primary">Start a Conversation</a>
-      </div>
+      <div class="section-eyebrow light"><span class="ey-num">02</span><span>Projects</span></div>
+      <h2 class="section-title light">Our Work</h2>
     </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="section dark-section">
-    <div class="container">
-      <div class="about-split">
-        <div class="about-content">
-          <span class="section-tag tag-blue">About TrueServe Construction</span>
-          <h2>A New Kind of <br /><span class="gradient-text">Construction Company</span></h2>
-          <p>TrueServe Construction was founded with a clear mission: to build smarter, greener, and more responsibly than the industry standard. We're not just constructing buildings — we're building the infrastructure of Charlotte's future.</p>
-          <p>We combine deep construction expertise with a genuine passion for technology and sustainability. When you work with TrueServe Construction, you get a partner who is invested in your project's success from first meeting to final walkthrough.</p>
-          <div class="about-values">
-            <div class="av-item">
-              <span>Integrity in every decision</span>
-            </div>
-            <div class="av-item">
-              <span>Continuous improvement mindset</span>
-            </div>
-            <div class="av-item">
-              <span>Proactive communication</span>
-            </div>
-            <div class="av-item">
-              <span>Problem-solving first approach</span>
-            </div>
-          </div>
-          <a href="#contact" class="btn-outline">Work With Us</a>
+    <div class="projects-grid">
+      <div class="proj-cell pc-tall">
+        <div class="proj-bg pb-1"></div>
+        <div class="proj-overlay">
+          <span class="proj-cat">Municipal</span>
+          <h3>Freedom Park Trail System</h3>
+          <p>AI kiosk installation &amp; trail development &mdash; Charlotte, NC</p>
+          <a href="#contact" class="proj-link">View Project &#8594;</a>
         </div>
-        <div class="about-visual">
-          <div class="team-card">
-            <div class="tc-header">
-              <div class="tc-avatar">TS</div>
-              <div>
-                <strong>TrueServe Construction</strong>
-                <span>Charlotte, NC</span>
-              </div>
-            </div>
-            <div class="tc-body">
-              <div class="tc-item">
-                <span class="tci-label">Focus</span>
-                <span class="tci-val">Smart & Sustainable Construction</span>
-              </div>
-              <div class="tc-item">
-                <span class="tci-label">Specialization</span>
-                <span class="tci-val">AI Integration + Green Building</span>
-              </div>
-              <div class="tc-item">
-                <span class="tci-label">Market</span>
-                <span class="tci-val">Charlotte Metro Area</span>
-              </div>
-              <div class="tc-item">
-                <span class="tci-label">Vision</span>
-                <span class="tci-val">Charlotte 2040 Aligned</span>
-              </div>
-            </div>
-            <div class="tc-certs">
-              <span class="cert">LEED Aligned</span>
-              <span class="cert">AI Ready</span>
-              <span class="cert">Safety Certified</span>
-            </div>
-          </div>
-          <div class="about-stats">
-            <div class="as-item">
-              <span class="as-num">Charlotte</span>
-              <span class="as-label">Based & Community Focused</span>
-            </div>
-            <div class="as-item">
-              <span class="as-num">AI+</span>
-              <span class="as-label">Technology-Integrated Builds</span>
-            </div>
-          </div>
+      </div>
+      <div class="proj-cell">
+        <div class="proj-bg pb-2"></div>
+        <div class="proj-overlay">
+          <span class="proj-cat">Commercial</span>
+          <h3>Uptown Office Complex</h3>
+          <p>Ground-up commercial build &mdash; 48,000 sqft</p>
+          <a href="#contact" class="proj-link">View Project &#8594;</a>
+        </div>
+      </div>
+      <div class="proj-cell">
+        <div class="proj-bg pb-3"></div>
+        <div class="proj-overlay">
+          <span class="proj-cat">Sustainable</span>
+          <h3>South End Mixed-Use</h3>
+          <p>LEED-aligned residential &amp; retail development</p>
+          <a href="#contact" class="proj-link">View Project &#8594;</a>
+        </div>
+      </div>
+      <div class="proj-cell pc-bottom">
+        <div class="proj-bg pb-4"></div>
+        <div class="proj-overlay">
+          <span class="proj-cat">Infrastructure</span>
+          <h3>Greenway Connector Phase II</h3>
+          <p>4.2 miles of smart public trail infrastructure</p>
+          <a href="#contact" class="proj-link">View Project &#8594;</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="section contact-section">
+  <section id="contact" class="section-contact">
+    <div class="contact-diag"></div>
     <div class="container">
       <div class="contact-split">
-        <div class="contact-content">
-          <span class="section-tag tag-gold">Get in Touch</span>
-          <h2>Let's Build Something <br /><span class="gradient-text-gold">Together</span></h2>
-          <p>Whether you have a project ready to go or just want to explore possibilities, we'd love to talk. Fill out the form and we'll respond within 24 hours.</p>
-          <div class="contact-info">
-            <div class="ci-item">
-              <span class="ci-icon"></span>
-              <div>
-                <strong>Charlotte, NC</strong>
-                <span>Serving the Charlotte Metro Area</span>
-              </div>
+        <div class="contact-left">
+          <div class="section-eyebrow"><span class="ey-num">03</span><span>Contact</span></div>
+          <h2 class="contact-headline">Let's<br/>Build.</h2>
+          <p class="contact-desc">Based in Charlotte, NC. Ready to talk about your next project.</p>
+          <div class="contact-details">
+            <div class="cd-item">
+              <span class="cd-label">Email</span>
+              <span class="cd-val">info@trueserveconstruction.com</span>
             </div>
-            <div class="ci-item">
-              <span class="ci-icon"></span>
-              <div>
-                <strong>info@ankobiagroup.com</strong>
-                <span>Response within 24 hours</span>
-              </div>
+            <div class="cd-item">
+              <span class="cd-label">Location</span>
+              <span class="cd-val">Charlotte, NC</span>
             </div>
-            <div class="ci-item">
-              <span class="ci-icon"></span>
-              <div>
-                <strong>(704) 555-0100</strong>
-                <span>Mon – Fri, 8am – 6pm</span>
-              </div>
+            <div class="cd-item">
+              <span class="cd-label">Response</span>
+              <span class="cd-val">Within 24 hours</span>
             </div>
           </div>
         </div>
-        <div class="contact-form-wrap">
+        <div class="contact-right">
           <form class="contact-form" id="contactForm">
             <div class="form-row">
               <div class="form-group">
-                <label for="firstName">First Name</label>
-                <input type="text" id="firstName" placeholder="John" required />
+                <label>Name</label>
+                <input type="text" placeholder="Your name" required />
               </div>
               <div class="form-group">
-                <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" placeholder="Smith" required />
+                <label>Email</label>
+                <input type="email" placeholder="your@email.com" required />
               </div>
             </div>
             <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" placeholder="john@company.com" required />
-            </div>
-            <div class="form-group">
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" placeholder="(704) 555-0000" />
-            </div>
-            <div class="form-group">
-              <label for="service">Service Interested In</label>
-              <select id="service">
-                <option value="">Select a service...</option>
+              <label>Project Type</label>
+              <select>
+                <option value="">Select a service</option>
                 <option>Commercial Construction</option>
                 <option>Residential Renovation</option>
+                <option>Municipal Infrastructure</option>
                 <option>Sustainable Building</option>
-                <option>AI Kiosk / Smart Infrastructure</option>
-                <option>Infrastructure & Trails</option>
-                <option>Joint Venture / Partnership</option>
                 <option>Other</option>
               </select>
             </div>
             <div class="form-group">
-              <label for="message">Tell Us About Your Project</label>
-              <textarea id="message" rows="4" placeholder="Describe your project, timeline, and any specific requirements..."></textarea>
+              <label>Message</label>
+              <textarea placeholder="Tell us about your project..." rows="5"></textarea>
             </div>
-            <button type="submit" class="btn-primary full-width">Send Message →</button>
-            <p class="form-note">We'll respond within 24 hours. No spam, ever.</p>
+            <button type="submit" class="btn-primary">Send Message</button>
+            <p class="form-note">Free consultation &middot; No commitment</p>
           </form>
           <div class="form-success" id="formSuccess">
-            <h3>Message Received!</h3>
-            <p>Thank you for reaching out to TrueServe Construction. We'll be in touch within 24 hours.</p>
+            <h3>Message Received.</h3>
+            <p>We'll be in touch within 24 hours.</p>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- BLOG PREVIEW -->
-  <section id="insights" class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag tag-blue">Insights</span>
-        <h2>AI + Construction <span class="gradient-text">Intelligence</span></h2>
-        <p>Thought leadership on AI, sustainable building, and Charlotte's growth — from the team building it.</p>
-      </div>
-      <div class="blog-grid">
-        <a href="blog.html#post-1" class="blog-card blog-card-featured">
-          <div class="blog-img bi-1">
-            <span class="blog-cat">AI in Construction</span>
-          </div>
-          <div class="blog-body">
-            <span class="blog-date">April 2026</span>
-            <h3>Why Charlotte's Next Decade of Construction Will Be Built on AI — or Left Behind</h3>
-            <p>Charlotte 2040 demands a new kind of contractor. Here's how predictive intelligence, computer vision, and real-time data are reshaping who wins public contracts.</p>
-            <span class="blog-read">Read Article →</span>
-          </div>
-        </a>
-        <a href="blog.html#post-2" class="blog-card">
-          <div class="blog-img bi-2">
-            <span class="blog-cat">Safety</span>
-          </div>
-          <div class="blog-body">
-            <span class="blog-date">March 2026</span>
-            <h3>Computer Vision on the Jobsite: What We Learned After 90 Days</h3>
-            <p>PPE detection, unsafe behavior alerts, and quality defect catches — real numbers from a real site.</p>
-            <span class="blog-read">Read Article →</span>
-          </div>
-        </a>
-        <a href="blog.html#post-3" class="blog-card">
-          <div class="blog-img bi-3">
-            <span class="blog-cat">Sustainability</span>
-          </div>
-          <div class="blog-body">
-            <span class="blog-date">February 2026</span>
-            <h3>LEED vs. Reality: What Green Building Actually Costs in Charlotte</h3>
-            <p>We break down the real numbers — upfront premiums, long-term savings, and the Charlotte incentives most developers don't know about.</p>
-            <span class="blog-read">Read Article →</span>
-          </div>
-        </a>
-        <a href="blog.html#post-4" class="blog-card">
-          <div class="blog-img bi-4">
-            <span class="blog-cat">Municipal</span>
-          </div>
-          <div class="blog-body">
-            <span class="blog-date">January 2026</span>
-            <h3>How AI Trail Kiosks Are Changing the Way Charlotte Manages Public Parks</h3>
-            <p>From usage analytics to emergency alerts — the data parks departments are now collecting that they never had before.</p>
-            <span class="blog-read">Read Article →</span>
-          </div>
-        </a>
-      </div>
-      <div class="blog-cta">
-        <a href="blog.html" class="btn-outline-dark">View All Articles →</a>
       </div>
     </div>
   </section>
@@ -1288,57 +289,27 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
+      <div class="footer-inner">
+        <div class="footer-left">
           <a href="#home" class="logo">
-            <img src="logo.png" alt="TrueServe Construction" class="logo-img" />
+            <img src="logo.png" alt="TrueServe" class="logo-img"/>
             <span class="logo-text">TrueServe<span class="logo-accent"> Construction</span></span>
           </a>
-          <p>Smart construction for Charlotte's future. AI-powered, sustainability-focused, community-driven.</p>
-          <div class="footer-certs">
-            <span>LEED Aligned</span>
-            <span>AI Integrated</span>
-            <span>CLT 2040</span>
-          </div>
+          <p>Charlotte's AI-powered construction company. Building smarter infrastructure for the city's future.</p>
         </div>
-        <div class="footer-links">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="#services">Commercial Construction</a></li>
-            <li><a href="#services">Residential Renovation</a></li>
-            <li><a href="#sustainable">Sustainable Building</a></li>
-            <li><a href="#ai-solutions">AI Solutions</a></li>
-            <li><a href="#services">Infrastructure & Trails</a></li>
-          </ul>
-        </div>
-        <div class="footer-links">
-          <h4>Company</h4>
-          <ul>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#projects">Our Projects</a></li>
-            <li><a href="#why-us">Why TrueServe</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-            <li><a href="#contact">Get a Bid</a></li>
-          </ul>
-        </div>
-        <div class="footer-links">
-          <h4>Connect</h4>
-          <ul>
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">info@ankobiagroup.com</a></li>
-          </ul>
-          <div class="footer-charlotte">
-            <span class="charlotte-badge">Proudly Charlotte, NC</span>
-          </div>
+        <div class="footer-links-row">
+          <a href="services.html">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="blog.html">Insights</a>
+          <a href="portal.html">Client Portal</a>
+          <a href="#contact">Contact</a>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 TrueServe Construction. All rights reserved. Built for Charlotte 2040.</p>
+        <span>&#169; 2025 TrueServe Construction. Charlotte, NC.</span>
         <div class="footer-bottom-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
         </div>
       </div>
     </div>
@@ -1358,7 +329,7 @@
           <span class="chat-status"><span class="live-dot"></span>Online</span>
         </div>
       </div>
-      <button class="chat-close" id="chatClose">✕</button>
+      <button class="chat-close" id="chatClose">&#10005;</button>
     </div>
     <div class="chat-messages" id="chatMessages">
       <div class="chat-msg bot">
@@ -1368,12 +339,11 @@
         <button class="chat-suggest" data-q="What services do you offer?">What services do you offer?</button>
         <button class="chat-suggest" data-q="How does your AI platform work?">How does the AI platform work?</button>
         <button class="chat-suggest" data-q="How do I get a bid?">How do I get a bid?</button>
-        <button class="chat-suggest" data-q="What is the ROI of using TrueServe?">What's the ROI?</button>
       </div>
     </div>
     <div class="chat-input-row">
       <input type="text" id="chatInput" placeholder="Ask anything..." />
-      <button id="chatSend">→</button>
+      <button id="chatSend">&#8594;</button>
     </div>
   </div>
 
