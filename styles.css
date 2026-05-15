@@ -248,7 +248,7 @@ a { text-decoration: none; color: inherit; }
 .hero-inner {
   position: relative;
   z-index: 2;
-  padding: 80px 40px;
+  padding: 120px 40px 80px;
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
@@ -265,10 +265,10 @@ a { text-decoration: none; color: inherit; }
 
 .hero-title {
   font-family: 'Syne', sans-serif;
-  font-size: clamp(72px, 11vw, 148px);
+  font-size: clamp(52px, 7.5vw, 108px);
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: -3px;
+  letter-spacing: -2px;
   line-height: 0.92;
   margin-bottom: 48px;
   display: flex;
